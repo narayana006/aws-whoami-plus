@@ -1,0 +1,6 @@
+{
+  "UserId": "AROAEXAMPLEEXAMPLEXYZ:alice@example.com",
+  "Account": "123456789012",
+  "Arn": "arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_ReadOnly_0123456789abcdef/alice@example.com",
+  "AccountAliases": ["acme-prod"]
+}

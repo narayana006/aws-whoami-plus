@@ -1,0 +1,4 @@
+# Copy to ~/.config/aws-whoami-plus/prod-accounts
+# One entry per line: an account ID, or a glob matched against the account alias.
+123456789012      # payments production
+*-prod
