@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws-whoami-plus"
+version = "0.1.0"
+description = "Show which AWS identity, account, region and role chain your shell is using, and when the session expires."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Narayana Vemburaj" }]
+dependencies = ["boto3>=1.28"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "moto[sts,iam]>=5"]
+
+[project.scripts]
+aws-whoami-plus = "aws_whoami_plus.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/narayana006/aws-whoami-plus"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
